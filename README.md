@@ -11,11 +11,12 @@ A full-stack To-Do List app built with **React**, **Spring Boot**, **MySQL**, an
 
 ## 📁 Project Structure
 
+```bash
 todo-project/
 ├── todo-frontend/       # React frontend
 ├── todo-backend/        # Spring Boot backend
 └── docker-compose.yml   # Docker orchestration
-
+```
 
 ## 🛠️ Getting Started
 
@@ -26,7 +27,9 @@ todo-project/
 ### Run the Application
 
 In the root of the project (`todo-project/`), run:
+```bash
 docker-compose up --build
+```
 
 This will start the following services:
 * 🐬 **MySQL database**
@@ -37,10 +40,12 @@ This will start the following services:
 
 To connect to the MySQL container and inspect data:
 
+```
 docker exec -it mysql-todo mysql -u root -p
 Enter password: root
 USE tododb;
 SELECT * FROM todo;
+```
 
 ## ✏️ Features
 
